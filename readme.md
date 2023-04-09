@@ -44,7 +44,3 @@
 **Dawn variant**
 
 ![Rosé Pine Dawn](https://cdn.discordapp.com/attachments/743573851685912629/806320359217168424/unknown.png)
-
-## Thanks to
-
-- [Caelie](https://github.com/Caelie)
