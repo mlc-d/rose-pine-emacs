@@ -1,8 +1,9 @@
-;;; rose-pine-color-theme.el --- All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
+;;; rose-pine-color-theme.el --- Soho vibes for the classy minimalist
 
 ;; Authors: Israel Romero <@caelie>
 ;; URL: http://github.com/caelie/rose-pine-emacs
 ;; Version: 0.2
+;; Package-Requires: ((emacs "28.1"))
 ;; Package-Requires: ((autothemer "0.2"))
 
 ;;; Commentary:
