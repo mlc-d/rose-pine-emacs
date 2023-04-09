@@ -13,16 +13,12 @@
 
 ## Usage
 
-### Installing with [straight.el](https://github.com/raxod502/straight.el)
+## Install
 ```elisp
-(use-package autothemer :ensure t)
+(package! autothemer)
 
-(straight-use-package
- '(rose-pine-emacs
-   :host github
-   :repo "Caelie/rose-pine-emacs"
-   :branch "master"))
-(load-theme 'rose-pine-{color-moon-dawn} t)
+(package! rose-pine-emacs
+  :recipe (:host github :repo "thongpv87/rose-pine-emacs" :branch "master"))
 ```
 
 ### Dependencies
