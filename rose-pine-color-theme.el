@@ -94,12 +94,12 @@
   (font-lock-keyword-face                    (:foreground iris))
 
   ;; Highlight line mode
-  (with-eval-after-load "hl-line"
+  (after! "hl-line"
   (set-face-attribute 'hl-line nil
                                           :background high))
 
   ;; Buttons
-  (with-eval-after-load "cus-edit"
+  (after! "cus-edit"
   (set-face-attribute 'custom-button nil
                                           :foreground (face-foreground 'faded)
                                           :background (face-background 'default)
@@ -122,7 +122,7 @@
                                           :inverse-video nil))
 
   ;; Documentation
-  (with-eval-after-load "info"
+  (after! "info"
     (info-menu-header                      (:foreground surface))
     (info-header-node                      (:foreground text))
     (info-index-match                      (:foreground iris))
@@ -133,12 +133,12 @@
     (info-title-4                          (:foreground surface)))
 
  ;; Bookmarks
-  (with-eval-after-load "bookmark"
+  (after! "bookmark"
     (bookmark-menu-heading              (:foreground surface))
     (bookmark-menu-bookmark             (:foreground iris)))
 
   ;; Message
-  (with-eval-after-load "message"
+  (after! "message"
     (message-cited-text                    (:foreground faded))
     (message-cited-text-1                  (:foreground faded))
     (message-cited-text-2                  (:foreground faded))
@@ -155,7 +155,7 @@
     (message-separator                     (:foreground faded)))
 
   ;; Outline
-  (with-eval-after-load "outline"
+  (after! "outline"
     (outline-1                              (:foreground surface))
     (outline-2                              (:foreground surface))
     (outline-3                              (:foreground surface))
@@ -166,7 +166,7 @@
     (outline-8                              (:foreground surface)))
 
   ;; Interface
-  (with-eval-after-load "cus-edit"
+  (after! "cus-edit"
     (widget-field                        (:foreground subtle))
     (widget-button                       (:foreground surface))
     (widget-single-line-field            (:foreground subtle))
@@ -185,7 +185,7 @@
     (custom-link                         (:foreground iris)))
 
   ;;Package
-  (with-eval-after-load "package"
+  (after! "package"
     (package-description                   (:foreground text))
     (package-help-section-name             (:foreground text))
     (package-name                          (:foreground iris))
@@ -203,12 +203,12 @@
 
 
   ;; Flyspell
-  (with-eval-after-load "flyspell"
+  (after! "flyspell"
     (flyspell-duplicate                     (:foreground love))
     (flyspell-incorrect                     (:foreground love)))
 
   ;; Ido
-  (with-eval-after-load "ido"
+  (after! "ido"
     (ido-first-match                        (:foreground iris))
     (ido-only-match                         (:foreground faded))
     (ido-subdir                             (:foreground surface))
@@ -228,7 +228,7 @@
 
 
   ;; Diff
-  (with-eval-after-load "diff-mode"
+  (after! "diff-mode"
     (diff-header                                      (:foreground faded))
     (diff-file-header                                 (:foreground surface))
     (diff-context                                     (:foreground text)))
@@ -241,7 +241,7 @@
     (set-face-attribute     'diff-refine-removed nil :strike-through t))
 
 ;; Term
-(with-eval-after-load "term"
+(after! "term"
   (term-bold                                   (:foreground surface))
   (set-face-attribute 'term-color-black nil
                                           :foreground (face-foreground 'text)
@@ -268,13 +268,13 @@
                                           :foreground "#f6c177"
                                           :background "#f4b65f"))
 
-(with-eval-after-load "calendar"
+(after! "calendar"
   (calendar-today                         (:foreground surface)))
 
 
 
   ;; org-agenda
-  (with-eval-after-load "org-agenda"
+  (after! "org-agenda"
     (org-agenda-calendar-event              (:foreground text))
     (org-agenda-calendar-sexp               (:foreground iris))
     (org-agenda-clocking                    (:foreground faded))
@@ -294,7 +294,7 @@
     (org-agenda-structure                   (:foreground surface)))
 
   ;; org mode
-  (with-eval-after-load "org"
+  (after! "org"
     (org-archived                            (:foreground faded))
     (org-block                               (:foreground faded))
     (org-block-begin-line                    (:foreground faded))
@@ -353,7 +353,7 @@
     (org-warning                             (:foreground love)))
 
   ;; Mu4e
-  (with-eval-after-load "mu4e"
+  (after! "mu4e"
     (mu4e-attach-number-face                 (:foreground surface))
     (mu4e-cited-1-face                       (:foreground faded))
     (mu4e-cited-2-face                       (:foreground faded))
@@ -393,7 +393,7 @@
     (mu4e-warning-face                       (:foreground love)))
 
   ;; Elfeed
-  (with-eval-after-load "elfeed"
+  (after! "elfeed"
     (elfeed-log-date-face                              (:foreground faded))
     (elfeed-log-info-level-face                        (:foreground text))
     (elfeed-log-debug-level-face                       (:foreground text))
@@ -411,7 +411,7 @@
 
 
   ;; RST mode
-  (with-eval-after-load "rst"
+  (after! "rst"
     (rst-adornment                                    (:foreground faded))
     (rst-block                                        (:foreground text))
     (rst-comment                                      (:foreground faded))
@@ -431,7 +431,7 @@
     (rst-transition                                   (:foreground text)))
 
   ;; Markdown mode
-  (with-eval-after-load "markdown-mode"
+  (after! "markdown-mode"
     (markdown-blockquote-face              (:foreground text))
     (markdown-bold-face                    (:foreground surface))
     (markdown-code-face                    (:foreground text))
@@ -476,7 +476,7 @@
     (markdown-url-face                     (:foreground iris)))
 
   ;; Ivy
-  (with-eval-after-load "ivy"
+  (after! "ivy"
     (ivy-action                              (:foreground faded))
     (ivy-completions-annotations             (:foreground faded))
     (ivy-confirm-face                        (:foreground faded))
@@ -499,11 +499,7 @@
     (ivy-separator                           (:foreground faded))
     (ivy-subdir                              (:foreground faded))
     (ivy-virtual                             (:foreground faded))
-    (ivy-yanked-word                         (:foreground faded)))
-
-
-
-  ))
+    (ivy-yanked-word                         (:foreground faded)))))
 
 ;;;###autoload
 (and load-file-name
